@@ -9,8 +9,8 @@ class App < Sinatra::Base
   end
 
   get '/checkout' do
-    item["input"]
-    @item = item
+    session["item"] = params[:item] #takes params from the form and adds to session hash. 
+    @session = session
     erb :checkout
   end
 end
