@@ -11,5 +11,6 @@ class App < Sinatra::Base
   get '/checkout' do
     item["input"]
     @item = item
+    erb :checkout
   end
 end
