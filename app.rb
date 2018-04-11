@@ -7,4 +7,9 @@ class App < Sinatra::Base
   get '/' do
     erb :index
   end
+
+  get '/checkout' do
+    item["input"]
+    @item = item
+  end
 end
